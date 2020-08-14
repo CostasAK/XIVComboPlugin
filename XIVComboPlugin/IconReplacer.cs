@@ -674,6 +674,26 @@ namespace XIVComboPlugin
                     return BLM.LeyLines;
                 }
 
+            // F1 to B1 depending on stance.
+            if (Configuration.ComboPresets.HasFlag(CustomComboPreset.BlackFireBlizzard1Feature))
+                if (actionID == BLM.Fire1)
+                {
+                    var gauge = clientState.JobGauges.Get<BLMGauge>();
+                    if (gauge.InAstralFire()) // Show Blizzard 1 if no stance as well.
+                        return BLM.Fire1;
+                    return BLM.Blizzard1;
+                }
+
+            // F2 to B2 depending on stance.
+            if (Configuration.ComboPresets.HasFlag(CustomComboPreset.BlackFireBlizzard2Feature))
+                if (actionID == BLM.Fire2)
+                {
+                    var gauge = clientState.JobGauges.Get<BLMGauge>();
+                    if (gauge.InAstralFire()) // Show Blizzard 2 if no stance as well.
+                        return BLM.Fire2;
+                    return BLM.Blizzard2;
+                }
+
             // ASTROLOGIAN
 
             // Make cards on the same button as play
