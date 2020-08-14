@@ -1135,6 +1135,10 @@ namespace XIVComboPlugin
             customIds.Add(21);
             customIds.Add(16537); // Whispering Dawn
             customIds.Add(16538); // Fey Illumination
+            customIds.Add(146); // BLM Blizzard2
+            customIds.Add(147); // BLM Fire2
+            customIds.Add(142); // BLM Blizzard1
+            customIds.Add(141); // BLM Fire1
             customIds.Add(DNC.Bloodshower);
             customIds.Add(DNC.RisingWindmill);
             customIds.Add(RDM.Verstone);
