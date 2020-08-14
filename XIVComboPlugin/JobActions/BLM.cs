@@ -9,6 +9,10 @@
             Transpose = 149,
             UmbralSoul = 16506,
             LeyLines = 3573,
-            BTL = 7419;
+            BTL = 7419,
+            Blizzard2 = 146,
+            Fire2 = 147,
+            Blizzard1 = 142,
+            Fire1 = 141;
     }
 }
