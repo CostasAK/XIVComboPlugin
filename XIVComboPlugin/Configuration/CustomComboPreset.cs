@@ -3,7 +3,7 @@ using XIVComboPlugin.JobActions;
 
 namespace XIVComboPlugin
 {
-    //CURRENT HIGHEST FLAG IS 57
+    //CURRENT HIGHEST FLAG IS 59
     [Flags]
     public enum CustomComboPreset : long
     {
@@ -120,6 +120,12 @@ namespace XIVComboPlugin
 
         [CustomComboInfo("(Between the) Ley Lines", "Change Ley Lines into BTL when Ley Lines is active", 25, new uint[] { BLM.LeyLines })]
         BlackLeyLines = 1L << 56,
+
+        [CustomComboInfo("Fire/Blizzard 1 Stance Switcher", "Change Fire 1 to Blizzard 1 depending on stance", 25, new uint[] { BLM.Fire1 })]
+        BlackFireBlizzard1Feature = 1L << 58,
+
+        [CustomComboInfo("Fire/Blizzard 2 Stance Switcher", "Change Fire 2 to Blizzard 2 depending on stance", 25, new uint[] { BLM.Fire2 })]
+        BlackFireBlizzard2Feature = 1L << 59,
 
         // ASTROLOGIAN
         [CustomComboInfo("Draw on Play", "Play turns into Draw when no card is drawn, as well as the usual Play behavior", 33, new uint[] { AST.Play })]
